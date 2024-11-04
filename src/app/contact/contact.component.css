@@ -1,0 +1,333 @@
+.contact-pro-top-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  color: white;
+  box-sizing: border-box;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.contact-pro-top-image {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  background-image: url("/Image/Works/construction-work-5.jpg");
+  background-position: top;
+  color: white;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-pro-top-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.contact-pro-top-image:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.contact-pro-top-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  text-align: center;
+  line-height: 1.2;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: translateY(50%);
+  animation: slideUp 1s ease-out 0.5s forwards;
+}
+
+.contact-pro-top-sub-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: white;
+  margin: 10px 0;
+  text-align: center;
+  z-index: 2;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: translateY(50%);
+  animation: slideUp 1s ease-out 0.7s forwards;
+}
+
+.contact-pro-top-subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+  z-index: 2;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: translateY(50%);
+  animation: slideUp 1s ease-out 0.9s forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Enhanced Form Styling */
+.form-flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 40px 40px;
+  align-items: center;
+  height: auto;
+}
+
+.form-left {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-right {
+  height: auto;
+  width: auto;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-right-div {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 20px 50px;
+  background: linear-gradient(135deg, #f0f0f0, #d0d0d0);
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.form-image {
+  flex: 0.9;
+  width: 90%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-height: 100px;
+  max-width: 800px;
+}
+
+/* Form fields */
+.form-phone-text,
+.form-subject,
+.form-message-title,
+.form-email-text,
+.form-name {
+  font-weight: 500;
+}
+
+.form-message-text,
+.form-message-text-text {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 15px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.form-message-text:hover,
+.form-message-text-text:hover {
+  border-color: #555;
+}
+
+.form-message-text:focus,
+.form-message-text-text:focus {
+  border-color: rgb(255, 193, 42);
+  box-shadow: 0px 0px 5px rgba(255, 193, 42, 0.5);
+  outline: none;
+}
+
+.form-container-text {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  max-height: 250px;
+}
+
+.form-message-title {
+  height: 25px;
+}
+
+/* Enhanced Submit button */
+.form-button {
+  width: 100%;
+  background: rgb(255, 193, 42);
+  color: rgb(8, 22, 59);
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Teko", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  border-radius: 12px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0px 8px 16px rgba(255, 193, 42, 0.3);
+}
+
+.form-button:hover {
+  background-color: rgb(230, 173, 30);
+  box-shadow: 0px 12px 20px rgba(255, 193, 42, 0.5);
+}
+
+.form-button:active {
+  opacity: 0.85;
+  transform: scale(0.98);
+}
+
+/* Contact section */
+.contact-trio {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  column-gap: 20px;
+  row-gap: 15px;
+  padding: 10px 30px;
+  overflow: hidden;
+}
+
+.contact-left-div,
+.contact-center-div,
+.contact-right-div {
+  flex: 1;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 15px 10px;
+}
+
+.contact-left-div:hover,
+.contact-center-div:hover,
+.contact-right-div:hover {
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.8);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+/* Icons */
+.faw {
+  background-color: rgb(195, 177, 133);
+  color: rgb(255, 193, 42);
+  font-size: 25px !important;
+  padding: 10px 10px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.faw:hover {
+  transform: scale(1.1);
+}
+
+/* Title and body */
+.constact-title {
+  font-family: "Teko", sans-serif;
+  font-size: 48px;
+  color: rgb(8, 22, 59);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-body {
+  font-family: "Teko", sans-serif;
+  font-size: 36px;
+  color: rgb(8, 22, 59);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Contact details */
+.email3,
+.phone-number3,
+.address3 {
+  color: rgb(8, 22, 59);
+}
+.alert {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: opacity 0.3s ease;
+}
+
+.alert p {
+  margin: 0;
+}
+
+.alert.info {
+  background-color: #cce5ff; /* Light blue background for info messages */
+  color: #004085; /* Dark blue text color */
+  border: 1px solid #b8daff; /* Light blue border */
+}
+
+.success-message {
+  background-color: #d4edda; /* Light green background */
+  color: #155724; /* Dark green text */
+  border: 1px solid #c3e6cb; /* Light green border */
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: inline-block; /* Keeps the success message inline */
+}
+
+.alert.fade-out {
+  opacity: 0; /* For fading out the alert */
+}
+
+.alert-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  margin-left: auto;
+}
+
+.form-button:disabled {
+  background-color: gray; /* Disabled state color */
+  color: lightgray; /* Disabled text color */
+  cursor: not-allowed; /* Not allowed cursor */
+}

@@ -1,0 +1,219 @@
+<div class="grid-images">
+  <img
+    class="photo-size"
+    src="Image/Projects/pictures-of-pic-1/pic-6.jpg"
+    alt="Arra Zef Home And Photo Logo House"
+  />
+  <div class="slogan-text">
+    Costruiamo sogni, <br />
+    un mattone alla volta.
+  </div>
+</div>
+<div class="firs-info">
+  <div class="first-photo-div-info">
+    <img
+      class="first-photo-info"
+      src="Image/Works/Construction-workers-1.jpg"
+    />
+    <img class="first-photo-bricks" src="Image/Works/home-pic-1.png" alt="" />
+  </div>
+
+  <div class="firs-text-grid">
+    <div class="text-body">
+      <h1 class="text-title js-text-title">
+        Trasformare la Tradizione con il Comfort Moderno
+      </h1>
+      <div class="text-body-info js-text-body-info">
+        Da oltre 25 anni, Arra Zef produce prodotti eccezionali edifici nelle
+        Langhe, fondendo l'estetica tradizionale con efficienza contemporanea.
+        Siamo specializzati in nuove costruzioni, restauri e ristrutturazioni
+        del patrimonio, garantendo che ogni progetto riflette qualità e
+        innovazione. Il nostro impegno per i dettagli e la tecnologia moderna
+        garantisce valore duraturo e comfort in ogni casa che costruiamo.
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="statistic-info">
+  <div class="statistics-grid">
+    <div class="inside-div-statistic-grid js-statistics-section">
+      <div class="statistics-value">
+        <span class="statistics-value-text js-years-experience"></span>
+      </div>
+      <div class="statistics-text">
+        <span class="statistics-text-text js-statistics-text-text"
+          >Anni di esperienza nel settore delle costruzioni</span
+        >
+      </div>
+    </div>
+    <div class="statistic-line"></div>
+    <div class="inside-div-statistic-grid">
+      <div class="statistics-value">
+        <span class="statistics-value-text js-employers-over-the-years"></span>
+      </div>
+      <div class="statistics-text">
+        <span class="statistics-text-text js-statistics-text-text"
+          >Datore di lavoro con oltre 25 anni di esperienza</span
+        >
+      </div>
+    </div>
+    <div class="statistic-line"></div>
+    <div class="inside-div-statistic-grid">
+      <div class="statistics-value">
+        <span class="statistics-value-text js-residential-complete"></span>
+      </div>
+      <div class="statistics-text">
+        <span class="statistics-text-text js-statistics-text-text"
+          >Premises residenziali completati in anni.</span
+        >
+      </div>
+    </div>
+    <div class="statistic-line"></div>
+    <div class="inside-div-statistic-grid">
+      <div class="statistics-value">
+        <span
+          class="statistics-value-text js-millions-investment-complete"
+        ></span>
+      </div>
+      <div class="statistics-text">
+        <span class="statistics-text-text js-statistics-text-text"
+          >Valore di milioni di dollari sugli investimenti</span
+        >
+      </div>
+    </div>
+  </div>
+</div> -->
+<div class="projects">
+  <div class="recent-projects-top">
+    <div class="title-cover">
+      <h1 class="title-cover-text js-title-cover-text">Progetti Recenti</h1>
+    </div>
+    <div class="button-cover">
+      <a class="button-view-all-link" href="projects.html">
+        <button class="button-view-all">
+          <span class="button-view-all-text js-button-view-all-text"
+            >VEDI TUTTI</span
+          >
+          <i aria-hidden="true" class="fa-angle-double-right fass"></i></button
+      ></a>
+    </div>
+  </div>
+  <div class="recent-projects-body js-recent-projects-body">
+    <div
+      *ngFor="let cover of covers | slice : 0 : 6; let i = index"
+      class="recent-projects-preview"
+      [attr.data-cover-id]="cover.id"
+      (click)="navigateToProject(cover.id, cover.name)"
+    >
+      <img
+        class="recent-project-photo"
+        [alt]="
+          'Servizi di ristrutturazione edilizia a ' +
+          cover.location +
+          ' - Building Renovation Services in ' +
+          cover.location
+        "
+        [src]="cover.pics[0]"
+      />
+      <span class="recent-project-title">{{ cover.name }}</span>
+      <span
+        class="recent-project-view-project-button js-recent-project-view-project-button"
+        >Vedi Progetto</span
+      >
+    </div>
+  </div>
+</div>
+<div class="services-grid">
+  <div class="services-uper-title-body">
+    <div class="services-uper-title js-services-uper-title">
+      I Nostri Servizi
+    </div>
+    <div class="button-cover">
+      <a class="button-view-all-link" href="services.html">
+        <button class="button-view-all">
+          <span class="button-view-all-text js-button-view-all-text-bottom"
+            >Vedi tutti i servizi</span
+          >
+          <i
+            aria-hidden="true"
+            class="fas fa-angle-double-right fass"
+          ></i></button
+      ></a>
+    </div>
+  </div>
+
+  <div class="services-kind-grid">
+    <div class="service-kind-items service-kind-items-construction">
+      <img
+        class="service-kind-items-photo"
+        src="Image/Logos/services-logo-6.png"
+      />
+      <span class="services-kind-up-text js-services-kind-up-text"
+        >Costruzione</span
+      >
+      <span class="services-kind-up-text-text js-services-kind-up-text-text"
+        >Siamo specializzati nella costruzione di case durevoli ed
+        energeticamente efficienti che combinano design moderno con artigianato
+        tradizionale.</span
+      >
+    </div>
+    <div class="services-line"></div>
+    <div class="service-kind-items service-kind-items-restoration">
+      <img
+        class="service-kind-items-photo"
+        src="Image/Logos/services-logo-1.png"
+      />
+      <span class="services-kind-up-text js-services-kind-up-text"
+        >Restauro</span
+      >
+      <span class="services-kind-up-text-text js-services-kind-up-text-text"
+        >Preserviamo il fascino degli edifici storici integrando la tecnologia
+        moderna e il comfort, restaurandoli al loro antico splendore.</span
+      >
+    </div>
+    <div class="services-line"></div>
+    <div class="service-kind-items service-kind-items-renovation">
+      <img
+        class="service-kind-items-photo"
+        src="Image/Logos/services-logo-2.png"
+      />
+      <span class="services-kind-up-text js-services-kind-up-text"
+        >Ristrutturazione</span
+      >
+      <span class="services-kind-up-text-text js-services-kind-up-text-text"
+        >Trasforma i tuoi spazi con le nostre innovative soluzioni di
+        ristrutturazione, progettate per migliorare sia lo stile che la
+        funzionalità.</span
+      >
+    </div>
+    <div class="services-line"></div>
+    <div class="service-kind-items service-kind-items-keys">
+      <img
+        class="service-kind-items-photo"
+        src="Image/Logos/services-logo-4.png"
+      />
+      <span class="services-kind-up-text js-services-kind-up-text"
+        >Chiavi in mano</span
+      >
+      <span class="services-kind-up-text-text js-services-kind-up-text-text"
+        >Ci occupiamo di tutto, dalla A alla Z, consegnando progetti completati
+        con ogni dettaglio curato, così puoi entrare senza pensieri.</span
+      >
+    </div>
+    <div class="services-line"></div>
+    <div class="service-kind-items service-kind-items-maintenance">
+      <img
+        class="service-kind-items-photo"
+        src="Image/Logos/service-logo-15.png"
+      />
+      <span class="services-kind-up-text js-services-kind-up-text"
+        >Iron Scaffolding Rental</span
+      >
+      <span class="services-kind-up-text-text js-services-kind-up-text-text"
+        >Il nostro team di esperti garantisce che la tua proprietà rimanga in
+        ottime condizioni, offrendo servizi di manutenzione affidabili e
+        tempestivi.</span
+      >
+    </div>
+  </div>
+</div>

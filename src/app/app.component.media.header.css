@@ -1,0 +1,489 @@
+@media (max-width: 400px) {
+  .home-header {
+    grid-template-columns: 1fr;
+    height: 80px;
+  }
+
+  .home-header-top-selection {
+    height: 30px;
+  }
+  .home-header-left-selection {
+    width: 100px; /* Adjusted width */
+    text-align: center;
+    padding-left: 5px;
+    height: 50px;
+  }
+  .home-left-and-right-header {
+    height: 50px;
+    padding-right: 05px;
+  }
+
+  .home-header-right-selection {
+    flex-direction: row; /* Keep items in a row */
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0px;
+    width: 280px;
+    padding-right: 0px !important;
+  }
+
+  .logo-photos {
+    width: 80px;
+    height: 50px; /* Adjusted width */
+  }
+
+  .arra-zef-logo-1,
+  .arra-zef-logo-2 {
+    width: 80px;
+    height: 50px;
+  }
+
+  .arra-zef-logo-1 {
+    left: 0px;
+    top: 0px;
+  }
+
+  .arra-zef-logo-2 {
+    left: 4px;
+    top: 0px;
+  }
+  .services-text,
+  .projetct-text,
+  .about-text,
+  .contact-text {
+    color: rgb(0, 0, 0);
+    font-size: 12px !important;
+    font-weight: 400;
+    padding: 0px;
+    margin: 0 0px; /* Adjust spacing between text items */
+  }
+
+  .header-link {
+    padding: 0;
+    display: contents;
+    font-size: 12px !important;
+  }
+
+  .phone-number {
+    right: 20%;
+    top: 5px;
+    font-size: 12px;
+  }
+  .fab {
+    font-size: 12px;
+    padding: 17px 0 0 0;
+  }
+  .fass {
+    display: none !important;
+  }
+  .home-header-top-selection-items {
+    width: 200px;
+  }
+  .flag,
+  .flag2 {
+    height: 18px;
+    width: 35px;
+    padding: 0;
+    margin: 0 5px 0 0;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 650px) {
+  .home-header {
+    grid-template-columns: 1fr;
+    height: 80px;
+  }
+
+  .home-header-top-selection {
+    height: 30px;
+  }
+  .home-header-left-selection {
+    width: 100px; /* Adjusted width */
+    text-align: center;
+    padding-left: 5px;
+    height: 50px;
+  }
+  .home-left-and-right-header {
+    height: 50px;
+    padding-right: 15px;
+  }
+
+  .home-header-right-selection {
+    flex-direction: row; /* Keep items in a row */
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+    width: 280px;
+    padding-right: 0px;
+  }
+
+  .logo-photos {
+    width: 100px;
+    height: 50px; /* Adjusted width */
+  }
+
+  .arra-zef-logo-1,
+  .arra-zef-logo-2 {
+    width: 100px;
+    height: 60px;
+  }
+
+  .arra-zef-logo-1 {
+    left: 0px;
+    top: 0px;
+  }
+
+  .arra-zef-logo-2 {
+    left: 4px;
+    top: 0px;
+  }
+  .services-text,
+  .projetct-text,
+  .about-text,
+  .contact-text {
+    color: rgb(0, 0, 0);
+    font-size: 12px !important; /* Adjust font size for smaller screens */
+    padding: 0px;
+    margin: 0 0px; /* Adjust spacing between text items */
+  }
+
+  .header-link {
+    padding: 0;
+    display: contents;
+    font-size: 12px !important;
+  }
+
+  .phone-number {
+    font-size: 12px;
+  }
+  .fab {
+    font-size: 14px;
+    padding: 17px 0 0 0;
+  }
+  .fass {
+    display: none !important;
+  }
+  .home-header-top-selection-items {
+    width: 200px;
+  }
+  .flag,
+  .flag2 {
+    height: 18px;
+    width: 35px;
+    padding: 0;
+    margin: 0 5px 0 0;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 900px) {
+  .home-header {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+
+  .home-header-left-selection {
+    width: 100px; /* Adjusted width */
+    text-align: center;
+    padding-left: 10px;
+  }
+
+  .home-header-right-selection {
+    flex-direction: row; /* Keep items in a row */
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+
+    width: 420px;
+  }
+
+  .logo-photos {
+    width: 250px; /* Adjusted width */
+  }
+
+  .arra-zef-logo-1,
+  .arra-zef-logo-2 {
+    width: 250px;
+  }
+
+  .services-text,
+  .projetct-text,
+  .about-text,
+  .contact-text {
+    color: rgb(0, 0, 0);
+    font-size: 16px !important; /* Adjust font size for smaller screens */
+    padding: 0px;
+    margin: 0 5px; /* Adjust spacing between text items */
+  }
+
+  .header-link {
+    padding: 0;
+    display: contents;
+    align-items: end;
+  }
+  .fab {
+    font-size: 19px !important;
+    padding: 10px 5px 0 0;
+  }
+
+  .fass {
+    display: none !important;
+  }
+  .title-cover-text {
+    padding-left: 10%;
+  }
+  .home-header-top-selection-items {
+    width: 280px;
+  }
+  .flag,
+  .flag2 {
+    height: 20px;
+    width: 40px;
+    padding: 0;
+    margin: 5px;
+  }
+}
+@media (min-width: 901px) and (max-width: 1700px) {
+  .home-header {
+    grid-template-columns: 540px 1fr;
+    height: 120px;
+  }
+
+  .home-header-top-selection {
+    height: 40px;
+  }
+
+  .home-left-and-right-header {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1 / span 2;
+  }
+
+  .logo-link {
+    display: contents;
+  }
+
+  .home-header-left-selection {
+    height: 80px;
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 0px;
+  }
+
+  .home-header-right-selection {
+    gap: 25px;
+    width: 650px;
+    min-width: 225px;
+  }
+
+  .logo-photos {
+    width: 515px;
+    height: 80px;
+    position: relative;
+  }
+  .arra-zef-logo-1,
+  .arra-zef-logo-2 {
+    width: 220px;
+    height: 80px;
+    top: 8%;
+  }
+  .services-text,
+  .projetct-text,
+  .about-text,
+  .contact-text {
+    color: rgb(0, 0, 0);
+    font-size: 19px; /* Adjust font size for smaller screens */
+  }
+
+  .header-link {
+    padding: 5px 10px;
+  }
+  .phone-number {
+    font-size: 19px;
+    top: 1%;
+  }
+  .f1,
+  .f2 {
+    height: 20px;
+    width: 20px;
+    top: 1%;
+    font-size: 19px !important;
+  }
+}
+@media (min-width: 1701px) and (max-width: 2200px) {
+  .home-header {
+    grid-template-columns: 540px 1fr;
+    height: 140px;
+  }
+
+  .home-header-top-selection {
+    height: 40px;
+  }
+
+  .home-left-and-right-header {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1 / span 2;
+  }
+
+  .logo-link {
+    display: contents;
+  }
+
+  .home-header-left-selection {
+    height: 100px;
+    width: 600px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 15px;
+  }
+
+  .home-header-right-selection {
+    gap: 35px;
+    width: 1000px;
+    min-width: 225px;
+  }
+
+  .logo-photos {
+    width: 615px;
+    height: 100px;
+    position: relative;
+  }
+  .arra-zef-logo-1,
+  .arra-zef-logo-2 {
+    width: 350px;
+    height: 100px;
+    top: 10%;
+  }
+
+  .services-text,
+  .projetct-text,
+  .about-text,
+  .contact-text {
+    color: rgb(0, 0, 0);
+    font-size: 29px; /* Adjust font size for smaller screens */
+  }
+
+  .header-link {
+    padding: 10px 50px;
+  }
+  .phone-number {
+    font-size: 21px;
+    width: 185px;
+  }
+  .f1,
+  .f2 {
+    height: 40px;
+    width: 40px;
+    font-size: 22px !important;
+  }
+  .home-header-top-selection-items {
+    width: 350px;
+  }
+  .fab {
+    margin: 7px 0 0 0;
+  }
+  .flag,
+  .flag2 {
+    height: 25px;
+    width: 45px;
+    padding: 0;
+    margin: 0 0px 0 0;
+  }
+  .flag {
+    margin-right: 15px;
+  }
+}
+@media (min-width: 2201px) and (max-width: 3200px) {
+  .home-header {
+    grid-template-columns: 540px 1fr;
+    height: 140px;
+  }
+
+  .home-header-top-selection {
+    height: 40px;
+  }
+
+  .home-left-and-right-header {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1 / span 2;
+  }
+
+  .logo-link {
+    display: contents;
+  }
+
+  .home-header-left-selection {
+    height: 100px;
+    width: 600px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 15px;
+  }
+
+  .home-header-right-selection {
+    gap: 35px;
+    width: 1000px;
+    min-width: 225px;
+  }
+
+  .logo-photos {
+    width: 615px;
+    height: 100px;
+    position: relative;
+  }
+  .arra-zef-logo-1,
+  .arra-zef-logo-2 {
+    width: 350px;
+    height: 100px;
+    top: 10%;
+  }
+
+  .services-text,
+  .projetct-text,
+  .about-text,
+  .contact-text {
+    color: rgb(0, 0, 0);
+    font-size: 30px !important; /* Adjust font size for smaller screens */
+  }
+
+  .header-link {
+    padding: 10px 50px;
+  }
+  .phone-number {
+    font-size: 23px;
+    width: 230px;
+  }
+  .f1,
+  .f2 {
+    height: 40px;
+    width: 40px;
+    font-size: 25px !important;
+  }
+  .fab {
+    padding: 7px 0 0 0;
+  }
+  .home-header-top-selection-items {
+    width: 400px;
+  }
+  .flag,
+  .flag2 {
+    height: 25px;
+    width: 45px;
+    padding: 0;
+    margin: 0 0px 0 0;
+  }
+  .flag {
+    margin-right: 15px;
+  }
+}
+/* Default hover effect for larger screens */
+
+/* Disable hover effect on smaller screens */
+@media (max-width: 768px) {
+  .services-text:hover,
+  .projetct-text:hover,
+  .about-text:hover,
+  .contact-text:hover {
+    color: none; /* Change text color on hover */
+    transform: none; /* Move text 50px to the right and zoom it to 150% */
+    transition: none;
+  }
+}

@@ -1,0 +1,194 @@
+<header>
+  <div class="home-header">
+    <div class="home-header-top-selection">
+      <div class="home-header-top-selection-items">
+        <button class="flag js-flag-1">
+          <img
+            class="flag-1"
+            src="Image/Logos/flag-uk.svg"
+            alt="english-flag-logo"
+          />
+        </button>
+        <button class="flag2 js-flag-2">
+          <img
+            class="flag-2"
+            src="Image/Logos/flag-it.svg"
+            alt="italian-flag-logo"
+          />
+        </button>
+        <a href="tel:+393494628225" class="phone-number">+39 349 462 8225</a>
+
+        <a
+          href="https://www.instagram.com/arra_costruzioni?igsh=MW5ra3doY3NzZjZyZw=="
+          target="_blank"
+          class="fab fa-instagram f2"
+        ></a>
+      </div>
+    </div>
+    <div class="home-left-and-right-header">
+      <div class="home-header-left-selection">
+        <a [routerLink]="['/home']" class="logo-link">
+          <div class="logo-photos">
+            <img class="arra-zef-logo-1" src="Image/Logos/Logo-6.gif" />
+            <img class="arra-zef-logo-2" src="Image/Logos/Logo-4.gif" />
+          </div>
+        </a>
+      </div>
+
+      <div class="home-header-right-selection">
+        <a class="header-link" [routerLink]="['/home']">
+          <span class="about-text js-about-text">Home</span>
+        </a>
+
+        <a class="header-link" [routerLink]="['/about']">
+          <span class="about-text js-about-text">Chi Siamo</span>
+        </a>
+        <a class="header-link" [routerLink]="['/projects']">
+          <span class="about-text js-about-text">Proggeti</span>
+        </a>
+
+        <a class="header-link" [routerLink]="['/service']">
+          <span class="services-text js-about-text">Servizi</span>
+        </a>
+        <a class="header-link" [routerLink]="['/contact']">
+          <span class="contact-text js-about-text">Contatti</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+<main><router-outlet></router-outlet></main>
+<footer>
+  <div class="footer-div-grid">
+    <div class="footer-top-container">
+      <div class="footer-left-container">
+        <div class="footer-left-items">
+          <div class="footer-left-photo-container">
+            <div class="footer-left-container-photo-div">
+              <img
+                class="footer-left-photo-logo-1"
+                src="Image/Logos/Logo-4.png"
+              />
+            </div>
+
+            <h1 class="footer-left-container-title">Arra Costruzioni SRL</h1>
+          </div>
+          <div class="footer-left-container-title-body">
+            <h1 class="footer-left-container-title-spa">P.IVA 03954990044</h1>
+          </div>
+
+          <div class="footer-left-container-insta-fb">
+            <!--   <a
+                href="https://www.facebook.com"
+                target="_blank"
+                class="social-icon facebook"
+              >
+                <i class="fab fa-facebook-f fat1"></i>
+              </a>-->
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              class="social-icon instagram"
+            >
+              <i class="fab fa-instagram fat2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-center-container">
+        <div class="footer-center-titile js-footer-center-titile">
+          Informazioni di Contatto
+          <div class="footer-line"></div>
+        </div>
+        <div class="footer-center-body">
+          <div class="footer-center-contact-phone">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+393494628225" class="phone-number2"
+              >+39 349 462 8225</a
+            >
+          </div>
+          <div class="footer-center-contact-email">
+            <i class="fa fa-envelope"></i>
+            <a href="mailto:arrazef@gmail.com" class="email"
+              >arrazef&#64;gmail.com</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="footer-right-container">
+        <div class="footer-right-titile">
+          Indirizzo
+          <div class="footer-line"></div>
+        </div>
+        <div class="footer-right-body">
+          <a href="https://maps.app.goo.gl/g2w49HqcpPP4YxYY9" target="_blank">
+            <i class="fas fa-map-marker-alt"></i>
+            <span class="footer-left-container-location"
+              >Cissone (CN) Via Airali 6, 12050, Italy</span
+            >
+          </a>
+        </div>
+      </div>
+      <div class="footer-right-menu-container">
+        <div class="footer-right-menu-title">
+          Azienda
+          <div class="footer-line"></div>
+        </div>
+
+        <div class="footer-right-menu-body">
+          <div class="footer-right-menu-body-text-items">
+            <div class="footer-right-menu-body-text">
+              <a [routerLink]="['/home']">
+                <span class="footer-right-menu-body-text-arrow">&#707; </span>
+                <span class="footer-right-menu-body-text-text">Home</span>
+              </a>
+            </div>
+            <div class="footer-right-menu-body-text">
+              <a [routerLink]="['/about']"
+                ><span class="footer-right-menu-body-text-arrow">&#707; </span>
+                <span class="footer-right-menu-body-text-text"
+                  >Chi Siamo</span
+                ></a
+              >
+            </div>
+            <div class="footer-right-menu-body-text">
+              <a [routerLink]="['/projects']">
+                <span class="footer-right-menu-body-text-arrow">&#707; </span>
+                <span class="footer-right-menu-body-text-text"
+                  >Progetti</span
+                ></a
+              >
+            </div>
+            <div class="footer-right-menu-body-text">
+              <a [routerLink]="['/services']">
+                <span class="footer-right-menu-body-text-arrow">&#707; </span>
+                <span class="footer-right-menu-body-text-text">Servizi</span></a
+              >
+            </div>
+            <div class="footer-right-menu-body-text">
+              <a [routerLink]="['/contact']"
+                ><span class="footer-right-menu-body-text-arrow">&#707; </span>
+                <span class="footer-right-menu-body-text-text"
+                  >Contatti</span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-container">
+      <div class="footer-bottom-left js-footer-bottom-left">
+        &copy; Copyright 2024 Arra Costruzioni SRL. Tutti i diritti riservati.
+        Immagini di
+        <a class="freepik" href="https://www.freepik.com" target="_blank">
+          Freepik</a
+        >
+      </div>
+      <div class="line-copyright"></div>
+      <div class="footer-bottom-right js-footer-bottom-right">
+        Design Web per l'edilizia di Florjan Plepaj
+      </div>
+    </div>
+  </div>
+</footer>
