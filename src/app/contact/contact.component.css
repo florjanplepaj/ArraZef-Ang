@@ -280,6 +280,7 @@
 .phone-number3,
 .address3 {
   color: rgb(8, 22, 59);
+  text-decoration: none !important;
 }
 .alert {
   margin-top: 10px;
@@ -288,7 +289,9 @@
   font-size: 14px;
   transition: opacity 0.3s ease;
 }
-
+a {
+  text-decoration: none;
+}
 .alert p {
   margin: 0;
 }

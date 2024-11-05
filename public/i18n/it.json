@@ -1,0 +1,77 @@
+{
+  "bodyText": "Da oltre 25 anni, Arra Zef costruisce edifici eccezionali nelle Langhe, fondendo l'estetica tradizionale con efficienza contemporanea. Siamo specializzati in nuove costruzioni, restauri e ristrutturazioni del patrimonio, garantendo che ogni progetto rifletta qualità e innovazione. Il nostro impegno per i dettagli e la tecnologia moderna assicura un valore duraturo e comfort in ogni casa che costruiamo.",
+  "textTitle": "Trasformare la Tradizione con il Comfort Moderno",
+  "statistics": [
+    "Anni di esperienza nel settore delle costruzioni",
+    "Operai con 25 anni di esperienza",
+    "Proprietà residenziali completate nel corso degli anni",
+    "Valore in milioni di euro sugli investimenti"
+  ],
+  "services": [
+    "Costruiamo case durevoli ed energeticamente efficienti che uniscono il design moderno con l'artigianato tradizionale.",
+    "Restauriamo edifici storici, preservando il loro fascino originale e integrando tecnologia e comfort moderni.",
+    "Offriamo ristrutturazioni innovative, migliorando lo stile e la funzionalità degli spazi.",
+    "Servizio chiavi in mano: gestiamo ogni dettaglio, dalla progettazione alla realizzazione, per un progetto completato senza preoccupazioni.",
+    "Noleggio di ponteggi in ferro affidabili per progetti di costruzione, garantendo la sicurezza e la stabilità sul cantiere."
+  ],
+  "serviceTitles": [
+    "Costruzione",
+    "Restauro",
+    "Ristrutturazione",
+    "Chiavi in Mano",
+    "Noleggio Ponteggi in Ferro"
+  ],
+  "contactUSTitle": "Informazioni di Contatto <div class='footer-line'></div>",
+  "addressTitle": "Indirizzo <div class='footer-line'></div>",
+  "companyTitle": "Azienda <div class='footer-line'></div>",
+  "menuButtons": ["Home", "Chi Siamo", "Progetti", "Servizi", "Contatti"],
+  "recentText": [
+    "Progetti Recenti",
+    "VEDI TUTTI",
+    "Vedi Progetto",
+    "I Nostri Servizi",
+    "Vedi tutti i servizi"
+  ],
+  "aboutUsTop": [
+    "Chi Siamo",
+    "Costruiamo con passione, precisione e un impegno verso l'eccellenza &#8722; scopri di più su chi siamo e cosa ci motiva."
+  ],
+  "projectTop": [
+    "I Nostri Progetti",
+    "Scopri l'artigianato dietro ogni progetto &#8722; vedi il nostro lavoro in azione!",
+    "Vedi Progetto"
+  ],
+  "serviceTop": [
+    "I Nostri Servizi",
+    "Creare Spazi, Costruire Futuri",
+    "Dalle nuove costruzioni ai restauri, offriamo servizi che realizzano la tua visione con precisione e passione."
+  ],
+  "contactTop": ["Contattaci", "Collaboriamo per realizzare buoni lavori."],
+  "contactForm": [
+    "<div class='form-container'>\n<span class='form-name'>Nome</span>\n<input type='text' class='form-message-text js-name' placeholder='Il tuo nome' />\n</div>\n<div class='form-container'>\n<span class='form-email-text form-email-text-lowercase'>Email</span>\n<input type='text' class='form-message-text js-email' placeholder='La tua email' />\n</div>\n<div class='form-container'>\n<span class='form-phone-text'>Telefono</span>\n<input type='text' class='form-message-text js-phone-number' placeholder='Numero di contatto' />\n</div>\n<div class='form-container'>\n<span class='form-subject'>Oggetto</span>\n<input type='text' class='form-message-text js-subject' placeholder='Oggetto' />\n</div>\n<div class='form-container-text'>\n<span class='form-message-title'>Messaggio</span>\n<textarea class='form-message-text-text js-message' cols='30' rows='10'></textarea>\n</div>\n<button class='form-button js-form-button'>\n<span class='form-button-text'>Invia Messaggio</span>\n</button>"
+  ],
+  "serviceTextTitle": [
+    "Costruzione",
+    "Restauro",
+    "Ristrutturazione",
+    "Chiavi in Mano",
+    "Noleggio Ponteggi in Ferro",
+    "Demolizione Di Strutture",
+    "Manutenzione"
+  ],
+  "serviceTextBody": [
+    "Offriamo servizi completi di costruzione, combinando abilmente l'artigianato tradizionale con tecniche moderne per realizzare progetti residenziali, commerciali e su misura di alta qualità, garantendo il rispetto dei tempi e del budget.",
+    "Restauriamo edifici storici con maestria, preservando il loro fascino originale e aggiornandoli agli standard moderni di sicurezza, efficienza energetica e comfort, assicurando la loro bellezza e funzionalità a lungo termine.",
+    "I nostri servizi di ristrutturazione coprono tutto, da piccoli aggiornamenti a trasformazioni complete, fondendo la tua visione con la nostra competenza per creare spazi moderni e duraturi nel design.",
+    "La nostra soluzione chiavi in mano gestisce l'intero processo di costruzione o ristrutturazione dall'inizio alla fine, occupandosi di tutti i dettagli affinché tu possa entrare in un progetto completamente finito senza stress o difficoltà.",
+    "Offriamo noleggio di ponteggi in ferro di alta qualità per progetti di costruzione di qualsiasi dimensione. Le nostre soluzioni di ponteggio garantiscono sicurezza e stabilità per lavoratori e materiali a qualsiasi altezza.",
+    "Il nostro servizio di demolizione di edifici offre soluzioni sicure ed efficienti per la demolizione di strutture residenziali e commerciali. Garantiamo un processo controllato e sistematico, rispettando le normative ambientali e preparando il sito per futuri progetti.",
+    "Il nostro team offre servizi di manutenzione completi, dalle ispezioni alle riparazioni, agli aggiornamenti e alla cura del giardino, inclusa la creazione di composizioni di giardini e l'automazione dei sistemi di irrigazione per mantenere la tua proprietà e gli spazi esterni in condizioni perfette."
+  ],
+  "contactMeth": ["Posizione", "Email", "Telefono"],
+  "projectLoc": ["Tutti i progetti"],
+  "copyRight": [
+    "&copy; Copyright 2024 Arra Zef SRL. Tutti i diritti riservati. Immagini di <a class='freepik' href='https://www.freepik.com' target='_blank'>Freepik</a>",
+    "Design Web per l'edilizia di Florjan Plepaj"
+  ]
+}

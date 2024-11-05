@@ -1,12 +1,13 @@
-import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
+import { Component, OnInit, Inject, PLATFORM_ID, inject } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { isPlatformBrowser } from '@angular/common';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HomeComponent, RouterModule],
+  imports: [RouterOutlet, HomeComponent, RouterModule, TranslateModule],
   templateUrl: './app.component.html',
   styleUrls: [
     './app.component.css',
@@ -19,6 +20,11 @@ export class AppComponent implements OnInit {
   title = 'ArraZefAng';
 
   constructor(@Inject(PLATFORM_ID) private platformId: any) {}
+
+  translate: TranslateService = inject(TranslateService);
+  translatText(lang: string) {
+    this.translate.use(lang);
+  }
 
   ngOnInit(): void {
     this.preloadImages();

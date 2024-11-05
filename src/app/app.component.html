@@ -2,14 +2,14 @@
   <div class="home-header">
     <div class="home-header-top-selection">
       <div class="home-header-top-selection-items">
-        <button class="flag js-flag-1">
+        <button class="flag js-flag-1" (click)="translatText('en')">
           <img
             class="flag-1"
             src="Image/Logos/flag-uk.svg"
             alt="english-flag-logo"
           />
         </button>
-        <button class="flag2 js-flag-2">
+        <button class="flag2 js-flag-2" (click)="translatText('it')">
           <img
             class="flag-2"
             src="Image/Logos/flag-it.svg"
@@ -37,21 +37,31 @@
 
       <div class="home-header-right-selection">
         <a class="header-link" [routerLink]="['/home']">
-          <span class="about-text js-about-text">Home</span>
+          <span class="about-text js-about-text">
+            {{ "menuButtons.0" | translate }}
+          </span>
         </a>
 
         <a class="header-link" [routerLink]="['/about']">
-          <span class="about-text js-about-text">Chi Siamo</span>
+          <span class="about-text js-about-text">
+            {{ "menuButtons.1" | translate }}</span
+          >
         </a>
         <a class="header-link" [routerLink]="['/projects']">
-          <span class="about-text js-about-text">Proggeti</span>
+          <span class="about-text js-about-text">
+            {{ "menuButtons.2" | translate }}</span
+          >
         </a>
 
         <a class="header-link" [routerLink]="['/service']">
-          <span class="services-text js-about-text">Servizi</span>
+          <span class="services-text js-about-text">
+            {{ "menuButtons.3" | translate }}</span
+          >
         </a>
         <a class="header-link" [routerLink]="['/contact']">
-          <span class="contact-text js-about-text">Contatti</span>
+          <span class="contact-text js-about-text">
+            {{ "menuButtons.4" | translate }}</span
+          >
         </a>
       </div>
     </div>
@@ -192,3 +202,8 @@
     </div>
   </div>
 </footer>
+<!-- 
+<button (click)="translatText('en')">English</button>
+<button (click)="translatText('it')">Italian</button>
+
+<h1>{{ "projectLoc" | translate }}</h1> -->
