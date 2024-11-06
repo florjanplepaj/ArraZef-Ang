@@ -16,8 +16,8 @@ export const routes: Routes = [
   { path: 'projects', component: ProjectsComponent },
   { path: 'service', component: ServicesCComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'project/:id', component: ProjectSelectedComponent }, // Example for adding more routes
-  { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirect to home
+  { path: 'project/:id', component: ProjectSelectedComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
 @NgModule({

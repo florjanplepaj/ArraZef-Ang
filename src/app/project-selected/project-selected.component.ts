@@ -11,7 +11,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   templateUrl: './project-selected.component.html',
   styleUrls: [
     './project-selected.component.css',
-    './project-selected.component.media.css',
+    './project-selected.component.media2.css',
   ],
 })
 export class ProjectSelectedComponent implements OnInit {
