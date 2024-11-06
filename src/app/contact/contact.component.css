@@ -14,7 +14,7 @@
   position: relative;
   height: 300px;
   width: 100%;
-  background-image: url("/Image/Works/construction-work-5.jpg");
+  background-image: url("Image/Works/construction-work-5.jpg");
   background-position: top;
   color: white;
   background-size: cover;
