@@ -42,9 +42,7 @@ export class ProjectsComponent implements OnInit {
   }
 
   goToSelectedProject(coverId: string, coverName: string): void {
-    this.router.navigate(['/project', coverId], {
-      queryParams: { coverName: coverName },
-    });
+    this.router.navigate(['/project', coverId]);
   }
 
   hasMoreProjects(): boolean {
