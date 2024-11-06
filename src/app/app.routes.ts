@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 // Ensure to export the routes for use in other modules
 export const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'projects', component: ProjectsComponent },
@@ -20,7 +21,7 @@ export const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes), HttpClientModule],
+  imports: [RouterModule.forRoot(routes, { useHash: true }), HttpClientModule],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
