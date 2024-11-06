@@ -19,11 +19,27 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 export class AppComponent implements OnInit {
   title = 'ArraZefAng';
 
-  constructor(@Inject(PLATFORM_ID) private platformId: any) {}
+  constructor(@Inject(PLATFORM_ID) private platformId: any) {
+    this.loadLanguagePreference();
+  }
 
   translate: TranslateService = inject(TranslateService);
   translatText(lang: string) {
     this.translate.use(lang);
+    if (typeof window !== 'undefined' && window.localStorage) {
+      localStorage.setItem('selectedLanguage', lang);
+    }
+  }
+
+  loadLanguagePreference() {
+    // Check if localStorage is available before accessing it
+    if (typeof window !== 'undefined' && window.localStorage) {
+      const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+      this.translate.use(savedLanguage);
+    } else {
+      // Fallback to a default language if localStorage is not available
+      this.translate.use('it');
+    }
   }
 
   ngOnInit(): void {

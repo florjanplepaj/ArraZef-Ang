@@ -1,12 +1,13 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, inject } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router'; // To get the project ID from the URL
 import { DataCovers } from '../services/data.service';
 import { NgFor, NgIf } from '@angular/common';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-selected-project',
   standalone: true,
-  imports: [NgFor, NgIf, RouterModule],
+  imports: [NgFor, NgIf, RouterModule, TranslateModule],
   templateUrl: './project-selected.component.html',
   styleUrls: [
     './project-selected.component.css',
@@ -79,5 +80,10 @@ export class ProjectSelectedComponent implements OnInit {
     } else if (event.key === 'ArrowRight') {
       this.scrollImages('right');
     }
+  }
+
+  translate: TranslateService = inject(TranslateService);
+  translatText(lang: string) {
+    this.translate.use(lang);
   }
 }

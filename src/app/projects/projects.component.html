@@ -1,10 +1,10 @@
 <div class="projects-pro-top-container">
   <div class="projects-pro-top-image">
     <div class="projects-pro-top-text">
-      <h1 class="projects-pro-top-title">I Nostri Progetti</h1>
+      <h1 class="projects-pro-top-title">{{ "projectTop.0" | translate }}</h1>
       <h2 class="projects-pro-top-sub-title">
-        Scopri l'artigianato dietro ogni progetto &#8722; vedi il nostro lavoro
-        in azione!
+        {{ "projectTop.1" | translate }} &#8722;
+        {{ "projectTop.2" | translate }}
       </h2>
     </div>
   </div>
@@ -17,21 +17,21 @@
       [class.selected]="selectedType === 'residenza'"
       (click)="filterProjectsByType('residenza', 3)"
     >
-      Residenziale
+      {{ "projectTopSelection.0" | translate }}
     </button>
     <button
       class="projects-type"
       [class.selected]="selectedType === 'restruction'"
       (click)="filterProjectsByType('restruction', 3)"
     >
-      Ristruttuazioni
+      {{ "projectTopSelection.1" | translate }}
     </button>
     <button
       class="projects-type"
       [class.selected]="selectedType === 'piscina'"
       (click)="filterProjectsByType('piscina', 3)"
     >
-      Piscine
+      {{ "projectTopSelection.2" | translate }}
     </button>
   </div>
 
@@ -43,7 +43,9 @@
         [src]="cover.pics[0]"
       />
       <span class="projects-page-title">{{ cover.name }}</span>
-      <span class="projects-page-view-project-button">Vedi Progetto</span>
+      <span class="projects-page-view-project-button">
+        {{ "projectTop.3" | translate }}</span
+      >
       <button
         class="projects-page-button-go-to"
         (click)="goToSelectedProject(cover.id, cover.name)"
@@ -59,7 +61,7 @@
       class="button-view-all-project"
       (click)="loadMoreProjects()"
     >
-      Load More
+      {{ "projectTopSelection.3" | translate }}
     </button>
   </div>
 </div>

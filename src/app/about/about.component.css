@@ -17,6 +17,7 @@
   background-image: url("/Image/Works/construction-work-6.png");
   color: white;
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
   background-position: center;
   display: flex;
   justify-content: center;
@@ -33,10 +34,11 @@
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-.about-us-top-image:hover {
-  background-color: rgba(0, 0, 0, 0);
-}
 
+.about-us-top-image > * {
+  position: relative;
+  z-index: 2;
+}
 .about-us-top-title {
   font-family: "Open Sans", sans-serif;
   font-size: 45px;

@@ -15,15 +15,15 @@
   height: 300px;
   width: 100%;
   background-image: url("/Image/Works/construction-work-6.jpg");
-
-  color: black;
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: black;
 }
 
+/* Dark overlay on image */
 .projects-pro-top-image::before {
   content: "";
   position: absolute;
@@ -31,11 +31,21 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.2
+  ); /* Dark overlay (increase opacity for darker effect) */
   z-index: 1;
 }
-.projects-pro-top-image:hover {
-  background-color: rgba(0, 0, 0, 0);
+
+/* Remove overlay on hover */
+
+/* Ensure content inside the image is above the overlay */
+.projects-pro-top-image > * {
+  position: relative;
+  z-index: 2;
 }
 
 .projects-pro-top-title {

@@ -4,19 +4,26 @@ import {
   HttpClientModule,
   HttpHeaders,
 } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact-form',
   standalone: true,
-  imports: [FormsModule, NgIf, HttpClientModule],
+  imports: [FormsModule, NgIf, HttpClientModule, TranslateModule],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css', './contact.component.media.css'],
 })
 export class ContactComponent {
   formSubmitted = false;
   formError = false;
+
+  translate: TranslateService = inject(TranslateService);
+  translatText(lang: string) {
+    this.translate.use(lang);
+  }
+
   constructor(private http: HttpClient) {}
   isEmailValid: boolean = true;
   onSubmit(f: NgForm) {

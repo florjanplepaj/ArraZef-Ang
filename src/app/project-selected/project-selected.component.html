@@ -4,7 +4,7 @@
     <span
       class="selected-project-left-location js-selected-project-left-location"
     >
-      Luogo:
+      {{ "projectLoc.0" | translate }}:
       <span class="selected-project-left-location-text">{{
         matchingProject?.location
       }}</span>
@@ -17,7 +17,8 @@
         <i aria-hidden="true" class="fatt8 fas fa-angle-double-left"></i>
         <span
           class="selected-project-left-all-projects js-selected-project-left-all-projects"
-          >Tutti i progetti</span
+        >
+          {{ "projectLoc.1" | translate }}</span
         >
       </button>
     </a>

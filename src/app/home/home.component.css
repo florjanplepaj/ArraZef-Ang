@@ -357,3 +357,12 @@
   text-align: center;
   padding: 5px 20px 20px 20px;
 }
+.fas {
+  font-size: 25px;
+  font-family: Teko, sans-serif;
+  color: rgb(37, 25, 0);
+  padding-right: 10px;
+}
+.fatt1 {
+  font-size: 34px;
+}

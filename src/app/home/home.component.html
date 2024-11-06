@@ -5,8 +5,9 @@
     alt="Arra Zef Home And Photo Logo House"
   />
   <div class="slogan-text">
-    Costruiamo sogni, <br />
-    un mattone alla volta.
+    {{ "slogan.0" | translate }} <br />
+
+    {{ "slogan.1" | translate }}
   </div>
 </div>
 <div class="firs-info">
@@ -21,15 +22,10 @@
   <div class="firs-text-grid">
     <div class="text-body">
       <h1 class="text-title js-text-title">
-        Trasformare la Tradizione con il Comfort Moderno
+        {{ "textTitle" | translate }}
       </h1>
       <div class="text-body-info js-text-body-info">
-        Da oltre 25 anni, Arra Zef produce prodotti eccezionali edifici nelle
-        Langhe, fondendo l'estetica tradizionale con efficienza contemporanea.
-        Siamo specializzati in nuove costruzioni, restauri e ristrutturazioni
-        del patrimonio, garantendo che ogni progetto riflette qualità e
-        innovazione. Il nostro impegno per i dettagli e la tecnologia moderna
-        garantisce valore duraturo e comfort in ogni casa che costruiamo.
+        {{ "bodyText" | translate }}
       </div>
     </div>
   </div>
@@ -86,16 +82,20 @@
 <div class="projects">
   <div class="recent-projects-top">
     <div class="title-cover">
-      <h1 class="title-cover-text js-title-cover-text">Progetti Recenti</h1>
+      <h1 class="title-cover-text js-title-cover-text">
+        {{ "recentText.0" | translate }}
+      </h1>
     </div>
     <div class="button-cover">
-      <a class="button-view-all-link" href="projects.html">
+      <a class="button-view-all-link" [routerLink]="['/projects']">
         <button class="button-view-all">
-          <span class="button-view-all-text js-button-view-all-text"
-            >VEDI TUTTI</span
+          <span class="button-view-all-text js-button-view-all-text">
+            {{ "recentText.1" | translate }}</span
           >
-          <i aria-hidden="true" class="fa-angle-double-right fass"></i></button
-      ></a>
+
+          <span class="fatt1">&#187;</span>
+        </button></a
+      >
     </div>
   </div>
   <div class="recent-projects-body js-recent-projects-body">
@@ -118,7 +118,8 @@
       <span class="recent-project-title">{{ cover.name }}</span>
       <span
         class="recent-project-view-project-button js-recent-project-view-project-button"
-        >Vedi Progetto</span
+      >
+        {{ "recentText.2" | translate }}</span
       >
     </div>
   </div>
@@ -126,19 +127,17 @@
 <div class="services-grid">
   <div class="services-uper-title-body">
     <div class="services-uper-title js-services-uper-title">
-      I Nostri Servizi
+      {{ "recentText.3" | translate }}
     </div>
     <div class="button-cover">
-      <a class="button-view-all-link" href="services.html">
+      <a class="button-view-all-link" [routerLink]="['/service']">
         <button class="button-view-all">
-          <span class="button-view-all-text js-button-view-all-text-bottom"
-            >Vedi tutti i servizi</span
+          <span class="button-view-all-text js-button-view-all-text-bottom">
+            {{ "recentText.4" | translate }}</span
           >
-          <i
-            aria-hidden="true"
-            class="fas fa-angle-double-right fass"
-          ></i></button
-      ></a>
+          <span class="fatt1">&#187;</span>
+        </button></a
+      >
     </div>
   </div>
 
@@ -148,14 +147,12 @@
         class="service-kind-items-photo"
         src="Image/Logos/services-logo-6.png"
       />
-      <span class="services-kind-up-text js-services-kind-up-text"
-        >Costruzione</span
+      <span class="services-kind-up-text js-services-kind-up-text">
+        {{ "serviceTitles.0" | translate }}</span
       >
-      <span class="services-kind-up-text-text js-services-kind-up-text-text"
-        >Siamo specializzati nella costruzione di case durevoli ed
-        energeticamente efficienti che combinano design moderno con artigianato
-        tradizionale.</span
-      >
+      <span class="services-kind-up-text-text js-services-kind-up-text-text">{{
+        "services.0" | translate
+      }}</span>
     </div>
     <div class="services-line"></div>
     <div class="service-kind-items service-kind-items-restoration">
@@ -163,13 +160,12 @@
         class="service-kind-items-photo"
         src="Image/Logos/services-logo-1.png"
       />
-      <span class="services-kind-up-text js-services-kind-up-text"
-        >Restauro</span
-      >
-      <span class="services-kind-up-text-text js-services-kind-up-text-text"
-        >Preserviamo il fascino degli edifici storici integrando la tecnologia
-        moderna e il comfort, restaurandoli al loro antico splendore.</span
-      >
+      <span class="services-kind-up-text js-services-kind-up-text">{{
+        "serviceTitles.1" | translate
+      }}</span>
+      <span class="services-kind-up-text-text js-services-kind-up-text-text">{{
+        "services.1" | translate
+      }}</span>
     </div>
     <div class="services-line"></div>
     <div class="service-kind-items service-kind-items-renovation">
@@ -177,14 +173,12 @@
         class="service-kind-items-photo"
         src="Image/Logos/services-logo-2.png"
       />
-      <span class="services-kind-up-text js-services-kind-up-text"
-        >Ristrutturazione</span
-      >
-      <span class="services-kind-up-text-text js-services-kind-up-text-text"
-        >Trasforma i tuoi spazi con le nostre innovative soluzioni di
-        ristrutturazione, progettate per migliorare sia lo stile che la
-        funzionalità.</span
-      >
+      <span class="services-kind-up-text js-services-kind-up-text">{{
+        "serviceTitles.2" | translate
+      }}</span>
+      <span class="services-kind-up-text-text js-services-kind-up-text-text">{{
+        "services.2" | translate
+      }}</span>
     </div>
     <div class="services-line"></div>
     <div class="service-kind-items service-kind-items-keys">
@@ -192,13 +186,12 @@
         class="service-kind-items-photo"
         src="Image/Logos/services-logo-4.png"
       />
-      <span class="services-kind-up-text js-services-kind-up-text"
-        >Chiavi in mano</span
-      >
-      <span class="services-kind-up-text-text js-services-kind-up-text-text"
-        >Ci occupiamo di tutto, dalla A alla Z, consegnando progetti completati
-        con ogni dettaglio curato, così puoi entrare senza pensieri.</span
-      >
+      <span class="services-kind-up-text js-services-kind-up-text">{{
+        "serviceTitles.3" | translate
+      }}</span>
+      <span class="services-kind-up-text-text js-services-kind-up-text-text">{{
+        "services.3" | translate
+      }}</span>
     </div>
     <div class="services-line"></div>
     <div class="service-kind-items service-kind-items-maintenance">
@@ -206,14 +199,12 @@
         class="service-kind-items-photo"
         src="Image/Logos/service-logo-15.png"
       />
-      <span class="services-kind-up-text js-services-kind-up-text"
-        >Iron Scaffolding Rental</span
-      >
-      <span class="services-kind-up-text-text js-services-kind-up-text-text"
-        >Il nostro team di esperti garantisce che la tua proprietà rimanga in
-        ottime condizioni, offrendo servizi di manutenzione affidabili e
-        tempestivi.</span
-      >
+      <span class="services-kind-up-text js-services-kind-up-text">{{
+        "serviceTitles.4" | translate
+      }}</span>
+      <span class="services-kind-up-text-text js-services-kind-up-text-text">{{
+        "services.4" | translate
+      }}</span>
     </div>
   </div>
 </div>

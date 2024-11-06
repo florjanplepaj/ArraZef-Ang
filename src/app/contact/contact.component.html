@@ -1,9 +1,11 @@
 <div class="contact-pro-top-container">
   <div class="contact-pro-top-image">
     <div class="contact-pro-top-text">
-      <h1 class="contact-pro-top-title">Contattaci</h1>
+      <h1 class="contact-pro-top-title">
+        {{ "contactTop.0" | translate }}
+      </h1>
       <h2 class="contact-pro-top-sub-title">
-        Collaboriamo per realizzare buoni lavori.
+        {{ "contactTop.1" | translate }}
       </h2>
     </div>
   </div>
@@ -22,10 +24,10 @@
         action="https://formspree.io/f/xbljgwpw"
       >
         <div class="form-container">
-          <span class="form-name">Nome</span>
+          <span class="form-name">{{ "formText.0" | translate }}</span>
           <input
             type="text"
-            placeholder="Il tuo nome"
+            [placeholder]="'formText.1' | translate"
             class="form-message-text"
             name="name"
             ngModel
@@ -37,21 +39,25 @@
           />
         </div>
         <div class="alert alert-error" *ngIf="name.invalid && name.touched">
-          <p *ngIf="name.hasError('required')">Il nome è obbligatorio...</p>
+          <p *ngIf="name.hasError('required')">
+            {{ "formText.2" | translate }}
+          </p>
           <p *ngIf="name.hasError('minlength')">
-            Il nome deve contenere almeno 3 caratteri
+            {{ "formText.3" | translate }}
           </p>
           <p *ngIf="name.hasError('maxlength')">
-            Il nome non può superare i 30 caratteri
+            {{ "formText.4" | translate }}
           </p>
         </div>
         <div class="form-container">
-          <span class="form-email-text form-email-text-lowercase">Email</span>
+          <span class="form-email-text form-email-text-lowercase">
+            {{ "formText.5" | translate }}</span
+          >
           <input
             type="text"
             class="form-message-text"
             name="email"
-            placeholder="La tua email"
+            [placeholder]="'formText.6' | translate"
             ngModel
             #email="ngModel"
             [class.ng-invalid]="email.invalid && email.touched"
@@ -60,18 +66,20 @@
           />
         </div>
         <div class="alert alert-error" *ngIf="email.invalid && email.touched">
-          <p *ngIf="email.hasError('required')">L'email è obbligatoria...</p>
+          <p *ngIf="email.hasError('required')">
+            {{ "formText.7" | translate }}
+          </p>
           <p *ngIf="email.hasError('pattern')">
-            L'email deve avere un formato valido
+            {{ "formText.8" | translate }}
           </p>
         </div>
         <div class="form-container">
-          <span class="form-phone-text">Telefono</span>
+          <span class="form-phone-text"> {{ "formText.9" | translate }}</span>
           <input
             type="text"
             class="form-message-text"
             name="phoneNumber"
-            placeholder="Numero di contatto"
+            [placeholder]="'formText.10' | translate"
             ngModel
             #phoneNumber="ngModel"
             [class.ng-invalid]="phoneNumber.invalid && phoneNumber.touched"
@@ -86,25 +94,25 @@
           *ngIf="phoneNumber.invalid && phoneNumber.touched"
         >
           <p *ngIf="phoneNumber.hasError('required')">
-            Il numero di telefono è obbligatorio...
+            {{ "formText.11" | translate }}
           </p>
           <p *ngIf="phoneNumber.hasError('minlength')">
-            Il numero di telefono deve contenere almeno 7 numeri
+            {{ "formText.12" | translate }}
           </p>
           <p *ngIf="phoneNumber.hasError('maxlength')">
-            Il numero di telefono non può superare i 20 numeri
+            {{ "formText.13" | translate }}
           </p>
           <p *ngIf="phoneNumber.hasError('pattern')">
-            Il numero di telefono deve avere un formato valido
+            {{ "formText.14" | translate }}
           </p>
         </div>
         <div class="form-container">
-          <span class="form-subject">Oggetto</span>
+          <span class="form-subject"> {{ "formText.15" | translate }}</span>
           <input
             type="text"
             class="form-message-text"
             name="subject"
-            placeholder="Oggetto"
+            [placeholder]="'formText.16' | translate"
             ngModel
             #subject="ngModel"
             [class.ng-invalid]="subject.invalid && subject.touched"
@@ -116,19 +124,23 @@
           class="alert alert-error"
           *ngIf="subject.invalid && subject.touched"
         >
-          <p *ngIf="subject.hasError('required')">Oggetto è obbligatorio...</p>
+          <p *ngIf="subject.hasError('required')">
+            {{ "formText.17" | translate }}
+          </p>
           <p *ngIf="subject.hasError('minlength')">
-            L'oggetto deve contenere almeno 3 caratteri
+            {{ "formText.18" | translate }}
           </p>
         </div>
         <div class="form-container-text">
-          <span class="form-message-title">Messaggio</span>
+          <span class="form-message-title">
+            {{ "formText.19" | translate }}</span
+          >
           <textarea
             class="form-message-text-text"
             name="message"
             cols="30"
             rows="10"
-            placeholder="Il tuo messaggio"
+            [placeholder]="'formText.20' | translate"
             ngModel
             #message="ngModel"
             [class.ng-invalid]="message.invalid && message.touched"
@@ -140,18 +152,18 @@
             *ngIf="message.invalid && message.touched"
           >
             <p *ngIf="message.hasError('required')">
-              Il messaggio è obbligatorio...
+              {{ "formText.21" | translate }}
             </p>
             <p *ngIf="message.hasError('minlength')">
-              Il messaggio deve contenere almeno 10 caratteri
+              {{ "formText.22" | translate }}
             </p>
           </div>
         </div>
         <button [disabled]="f.invalid" type="submit" class="form-button">
-          <span class="form-button-text">Invia Messaggio</span>
+          <span class="form-button-text"> {{ "formText.23" | translate }}</span>
         </button>
         <div *ngIf="formSubmitted" class="success-message">
-          Il tuo messaggio è stato inviato con successo!
+          {{ "formText.24" | translate }}
         </div>
       </form>
     </div>
@@ -159,11 +171,13 @@
 </div>
 <div class="contact-trio">
   <div class="contact-left-div">
-    <a href="https://maps.app.goo.gl/J6HxbULMWr98d42V6" target="_blank">
+    <a href="https://maps.app.goo.gl/9zE6GiUi78uFi5P69" target="_blank">
       <div class="contact-logo">
         <i class="fa faw fa-map-marker-alt"></i>
       </div>
-      <div class="constact-title js-constact-title">Location</div>
+      <div class="constact-title js-constact-title">
+        {{ "contactMeth.0" | translate }}
+      </div>
       <div class="contact-body">
         <span class="address3"> Cissone (CN) Via Airali 6, 12050, Italy </span>
       </div>
@@ -174,7 +188,9 @@
       <div class="contact-logo">
         <i class="fa faw fa-envelope"></i>
       </div>
-      <div class="constact-title js-constact-title">Email</div>
+      <div class="constact-title js-constact-title">
+        {{ "contactMeth.1" | translate }}
+      </div>
       <div class="contact-body">
         <span class="email3">arrazef&#64;gmail.com </span>
       </div>
@@ -185,7 +201,9 @@
       <div class="contact-logo">
         <i class="fa faw fa-phone"></i>
       </div>
-      <div class="constact-title js-constact-title">Phone</div>
+      <div class="constact-title js-constact-title">
+        {{ "contactMeth.2" | translate }}
+      </div>
       <div class="contact-body">
         <span class="phone-number3">+39 349 462 8225 </span>
       </div>

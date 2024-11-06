@@ -1,8 +1,9 @@
-import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
+import { Component, OnInit, Inject, PLATFORM_ID, inject } from '@angular/core';
 import { DataCovers } from '../services/data.service';
 import { CommonModule, NgClass, NgFor } from '@angular/common';
 import { isPlatformBrowser } from '@angular/common';
 import { Router, RouterModule } from '@angular/router';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 interface Cover {
   id: number;
@@ -14,7 +15,7 @@ interface Cover {
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, NgFor, RouterModule],
+  imports: [CommonModule, NgFor, RouterModule, TranslateModule],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css', 'home.component.media.css'],
 })
@@ -34,6 +35,11 @@ export class HomeComponent implements OnInit {
     if (isPlatformBrowser(this.platformId)) {
       this.setupObserver(); // Set up the observer only in the browser
     }
+  }
+
+  translate: TranslateService = inject(TranslateService);
+  translatText(lang: string) {
+    this.translate.use(lang);
   }
 
   loadCovers() {

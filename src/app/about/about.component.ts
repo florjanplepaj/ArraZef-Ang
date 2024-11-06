@@ -1,12 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './about.component.html',
-  styleUrl: './about.component.css'
+  styleUrl: './about.component.css',
 })
 export class AboutComponent {
-
+  translate: TranslateService = inject(TranslateService);
+  translatText(lang: string) {
+    this.translate.use(lang);
+  }
 }

@@ -1,6 +1,7 @@
 {
   "bodyText": "Da oltre 25 anni, Arra Zef costruisce edifici eccezionali nelle Langhe, fondendo l'estetica tradizionale con efficienza contemporanea. Siamo specializzati in nuove costruzioni, restauri e ristrutturazioni del patrimonio, garantendo che ogni progetto rifletta qualità e innovazione. Il nostro impegno per i dettagli e la tecnologia moderna assicura un valore duraturo e comfort in ogni casa che costruiamo.",
   "textTitle": "Trasformare la Tradizione con il Comfort Moderno",
+  "slogan": ["Costruiamo sogni,", " un mattone alla volta"],
   "statistics": [
     "Anni di esperienza nel settore delle costruzioni",
     "Operai con 25 anni di esperienza",
@@ -21,9 +22,9 @@
     "Chiavi in Mano",
     "Noleggio Ponteggi in Ferro"
   ],
-  "contactUSTitle": "Informazioni di Contatto <div class='footer-line'></div>",
-  "addressTitle": "Indirizzo <div class='footer-line'></div>",
-  "companyTitle": "Azienda <div class='footer-line'></div>",
+  "contactUSTitle": "Informazioni di Contatto",
+  "addressTitle": "Indirizzo ",
+  "companyTitle": "Azienda ",
   "menuButtons": ["Home", "Chi Siamo", "Progetti", "Servizi", "Contatti"],
   "recentText": [
     "Progetti Recenti",
@@ -34,12 +35,20 @@
   ],
   "aboutUsTop": [
     "Chi Siamo",
-    "Costruiamo con passione, precisione e un impegno verso l'eccellenza &#8722; scopri di più su chi siamo e cosa ci motiva."
+    "Costruiamo con passione, precisione e un impegno verso l'eccellenza ",
+    "scopri di più su chi siamo e cosa ci motiva."
   ],
   "projectTop": [
     "I Nostri Progetti",
-    "Scopri l'artigianato dietro ogni progetto &#8722; vedi il nostro lavoro in azione!",
+    "Scopri l'artigianato dietro ogni progetto ",
+    " vedi il nostro lavoro in azione!",
     "Vedi Progetto"
+  ],
+  "projectTopSelection": [
+    " Residenziale",
+    "Ristruttuazioni ",
+    " Piscine",
+    "Carica di più"
   ],
   "serviceTop": [
     "I Nostri Servizi",
@@ -48,7 +57,12 @@
   ],
   "contactTop": ["Contattaci", "Collaboriamo per realizzare buoni lavori."],
   "contactForm": [
-    "<div class='form-container'>\n<span class='form-name'>Nome</span>\n<input type='text' class='form-message-text js-name' placeholder='Il tuo nome' />\n</div>\n<div class='form-container'>\n<span class='form-email-text form-email-text-lowercase'>Email</span>\n<input type='text' class='form-message-text js-email' placeholder='La tua email' />\n</div>\n<div class='form-container'>\n<span class='form-phone-text'>Telefono</span>\n<input type='text' class='form-message-text js-phone-number' placeholder='Numero di contatto' />\n</div>\n<div class='form-container'>\n<span class='form-subject'>Oggetto</span>\n<input type='text' class='form-message-text js-subject' placeholder='Oggetto' />\n</div>\n<div class='form-container-text'>\n<span class='form-message-title'>Messaggio</span>\n<textarea class='form-message-text-text js-message' cols='30' rows='10'></textarea>\n</div>\n<button class='form-button js-form-button'>\n<span class='form-button-text'>Invia Messaggio</span>\n</button>"
+    "Nome",
+    "Email",
+    "Telefono",
+    "Oggetto",
+    "Messaggio",
+    "Invia Messaggio"
   ],
   "serviceTextTitle": [
     "Costruzione",
@@ -58,6 +72,34 @@
     "Noleggio Ponteggi in Ferro",
     "Demolizione Di Strutture",
     "Manutenzione"
+  ],
+
+  "formText": [
+    "Nome",
+    "Il tuo nome",
+    "Il nome è obbligatorio...",
+    "Il nome deve contenere almeno 3 caratteri",
+    "Il nome non può superare i 30 caratteri",
+    "Email",
+    "La tua email",
+    "L'email è obbligatoria...",
+    "L'email deve avere un formato valido",
+    "Telefono",
+    "Numero di contatto",
+    "Il numero di telefono è obbligatorio...",
+    "Il numero di telefono deve contenere almeno 7 cifre",
+    "Il numero di telefono non può superare i 20 numeri",
+    "Il numero di telefono deve avere un formato valido",
+    "Oggetto",
+    "Oggetto",
+    "L'oggetto è obbligatorio...",
+    "L'oggetto deve contenere almeno 3 caratteri",
+    "Messaggio",
+    "Il tuo messaggio",
+    "Il messaggio è obbligatorio...",
+    "Il messaggio deve contenere almeno 10 caratteri",
+    "Invia messaggio",
+    "Il tuo messaggio è stato inviato con successo!"
   ],
   "serviceTextBody": [
     "Offriamo servizi completi di costruzione, combinando abilmente l'artigianato tradizionale con tecniche moderne per realizzare progetti residenziali, commerciali e su misura di alta qualità, garantendo il rispetto dei tempi e del budget.",
@@ -69,9 +111,9 @@
     "Il nostro team offre servizi di manutenzione completi, dalle ispezioni alle riparazioni, agli aggiornamenti e alla cura del giardino, inclusa la creazione di composizioni di giardini e l'automazione dei sistemi di irrigazione per mantenere la tua proprietà e gli spazi esterni in condizioni perfette."
   ],
   "contactMeth": ["Posizione", "Email", "Telefono"],
-  "projectLoc": ["Tutti i progetti"],
+  "projectLoc": ["Luogo", "Tutti i progetti"],
   "copyRight": [
-    "&copy; Copyright 2024 Arra Zef SRL. Tutti i diritti riservati. Immagini di <a class='freepik' href='https://www.freepik.com' target='_blank'>Freepik</a>",
+    "Copyright 2024 Arra Zef SRL. Tutti i diritti riservati. Immagini di ",
     "Design Web per l'edilizia di Florjan Plepaj"
   ]
 }

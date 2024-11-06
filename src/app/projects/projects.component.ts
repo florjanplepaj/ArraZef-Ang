@@ -1,12 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { DataCovers } from '../services/data.service';
 import { NgFor, NgIf } from '@angular/common';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [NgIf, NgFor],
+  imports: [NgIf, NgFor, TranslateModule],
 
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css', './projects.component.media.css'],
@@ -51,5 +52,10 @@ export class ProjectsComponent implements OnInit {
       this.filteredCovers.length <
       this.covers.filter((cover) => cover.type === this.selectedType).length
     );
+  }
+
+  translate: TranslateService = inject(TranslateService);
+  translatText(lang: string) {
+    this.translate.use(lang);
   }
 }
