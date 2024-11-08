@@ -132,6 +132,12 @@
     background-color: rgb(50, 50, 50);
     color: white;
   }
+  .projects-pro-top-container {
+    height: 200px;
+  }
+  .projects-pro-top-title {
+    margin-top: -150px;
+  }
 }
 
 @media (max-width: 350px) {

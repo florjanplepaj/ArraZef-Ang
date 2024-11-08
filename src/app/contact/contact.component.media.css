@@ -1,3 +1,11 @@
+@media (max-width: 350px) {
+  .form-left,
+  .form-right {
+    width: 90%;
+    padding-left: auto;
+  }
+}
+
 @media (min-width: 300px) and (max-width: 500px) {
   .form-flex {
     grid-template-columns: 1fr;
@@ -18,6 +26,7 @@
   }
   .form-right-div {
     padding: 15px;
+
     height: auto;
   }
   .form-message-text,
@@ -106,10 +115,26 @@
     height: auto;
   }
 }
-@media (min-width: 901px) and (max-width: 1600px) {
+@media (min-width: 801px) and (max-width: 1100px) {
+  .contact-pro-top-title {
+    left: 40%;
+  }
+
+  .contact-pro-top-sub-title {
+    left: 32%;
+  }
+}
+@media (min-width: 1101px) and (max-width: 1600px) {
   .form-container,
   .form-container-text {
     max-width: 500px;
+  }
+  .contact-pro-top-title {
+    left: 40%;
+  }
+
+  .contact-pro-top-sub-title {
+    left: 35%;
   }
 }
 @media (min-width: 1201px) and (max-width: 1600px) {

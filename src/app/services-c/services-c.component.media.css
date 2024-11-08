@@ -111,6 +111,19 @@
   .service-top-subtitle {
     font-size: 14px;
   }
+  .service-top-title {
+    top: 30%;
+    left: 30%;
+  }
+
+  .service-top-sub-title {
+    top: 48%;
+    left: 24%;
+  }
+  .service-top-subtitle {
+    top: 65%;
+    left: 2%;
+  }
 }
 @media (max-width: 600px) {
   .service-body-container {
@@ -147,5 +160,11 @@
 
   .service-top-subtitle {
     font-size: 14px;
+  }
+  .services-top-container {
+    height: 200px;
+  }
+  .service-top-title {
+    margin-top: -170px;
   }
 }

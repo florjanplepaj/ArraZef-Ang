@@ -3,24 +3,18 @@
   flex-direction: column;
   width: 100%;
   height: 300px;
-  position: relative;
-  color: white;
-  box-sizing: border-box;
-  cursor: pointer;
-  object-fit: cover;
 }
 
 .contact-pro-top-image {
-  position: relative;
-  height: 300px;
+  height: 100%;
   width: 100%;
-  background-image: url("/Image/Works/construction-work-5.jpg");
-  background-position: top;
-  color: white;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+}
+.contact-pro-top-image-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .contact-pro-top-image::before {
@@ -33,11 +27,6 @@
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-
-.contact-pro-top-image:hover {
-  background-color: rgba(0, 0, 0, 0);
-}
-
 .contact-pro-top-title {
   font-family: "Open Sans", sans-serif;
   font-size: 45px;
@@ -46,11 +35,12 @@
   margin: 0;
   text-align: center;
   line-height: 1.2;
-  z-index: 2;
+  z-index: 4;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   opacity: 0;
   transform: translateY(50%);
   animation: slideUp 1s ease-out 0.5s forwards;
+  margin-top: -200px;
 }
 
 .contact-pro-top-sub-title {
@@ -65,19 +55,6 @@
   opacity: 0;
   transform: translateY(50%);
   animation: slideUp 1s ease-out 0.7s forwards;
-}
-
-.contact-pro-top-subtitle {
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  color: white;
-  margin-top: 10px;
-  text-align: center;
-  z-index: 2;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transform: translateY(50%);
-  animation: slideUp 1s ease-out 0.9s forwards;
 }
 
 @keyframes slideUp {
