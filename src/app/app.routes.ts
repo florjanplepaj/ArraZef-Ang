@@ -25,16 +25,10 @@ export const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes, {
       useHash: true,
-      scrollPositionRestoration: 'top',
+      scrollPositionRestoration: 'enabled',
     }),
     HttpClientModule,
   ],
   exports: [RouterModule],
 })
-export class AppRoutingModule {
-  constructor(router: Router, viewportScroller: ViewportScroller) {
-    router.events
-      .pipe(filter((e) => e instanceof Scroll))
-      .subscribe(() => viewportScroller.scrollToPosition([0, 0]));
-  }
-}
+export class AppRoutingModule {}
