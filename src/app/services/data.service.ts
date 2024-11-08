@@ -33,8 +33,8 @@ export class DataCovers {
     },
     {
       id: '88ae39bc-f1ee-4c44-a4d2-b819973710c0',
-      name: 'Farigliano Villa',
-      location: 'Turin, Italy',
+      name: 'Ristrutturazione Cascina',
+      location: 'Roddino(CN), Italy',
       pics: [
         'Image/Covers/cover-pic-4.jpg',
         'Image/Projects/pictures-of-pic-4/pic-21.jpg',
@@ -102,8 +102,8 @@ export class DataCovers {
     },
     {
       id: '604f7558-54ce-49fc-9840-b6cceec7f3a8',
-      name: 'Farigliano Villa',
-      location: 'Turin, Italy',
+      name: 'Ristrutturazione Cascina Del 1700',
+      location: 'Novello (CN), Italy',
       pics: [
         'Image/Projects/pictures-of-pic-9/costuzione-pic-48.jpg',
         'Image/Projects/pictures-of-pic-9/costuzione-pic-49.jpg',
