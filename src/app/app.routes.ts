@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, Router, Scroll } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
@@ -7,8 +7,9 @@ import { ServicesCComponent } from './services-c/services-c.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectSelectedComponent } from './project-selected/project-selected.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ViewportScroller } from '@angular/common';
+import { filter } from 'rxjs';
 
-// Ensure to export the routes for use in other modules
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
@@ -21,7 +22,19 @@ export const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { useHash: true }), HttpClientModule],
+  imports: [
+    RouterModule.forRoot(routes, {
+      useHash: true,
+      scrollPositionRestoration: 'top',
+    }),
+    HttpClientModule,
+  ],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule {
+  constructor(router: Router, viewportScroller: ViewportScroller) {
+    router.events
+      .pipe(filter((e) => e instanceof Scroll))
+      .subscribe(() => viewportScroller.scrollToPosition([0, 0]));
+  }
+}
