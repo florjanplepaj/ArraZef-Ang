@@ -6,7 +6,7 @@
   }
 }
 
-@media (min-width: 300px) and (max-width: 500px) {
+@media (max-width: 500px) {
   .form-flex {
     grid-template-columns: 1fr;
     align-items: center;
@@ -57,6 +57,17 @@
   .constact-trio {
     column-gap: 15px;
     gap: 5px;
+  }
+  .contact-pro-top-title {
+    font-size: 40px;
+    margin-top: -150px;
+  }
+
+  .contact-pro-top-sub-title {
+    font-size: 20px;
+  }
+  .contact-pro-top-container {
+    height: 200px;
   }
 }
 @media (min-width: 501px) and (max-width: 800px) {

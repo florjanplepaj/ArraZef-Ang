@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/arra-zef-ang",
+            "outputPath": "docs",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -28,12 +28,7 @@
               "src/styles.css",
               "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -50,6 +45,10 @@
                 }
               ],
               "outputHashing": "all"
+            },
+            "github-pages": {
+              "outputPath": "docs",
+              "baseHref": "/ArraZef-Ang/"
             },
             "development": {
               "optimization": false,
