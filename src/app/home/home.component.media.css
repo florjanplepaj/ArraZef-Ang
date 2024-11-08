@@ -1,4 +1,4 @@
-@media (max-width: 500px) {
+@media (max-width: 520px) {
   .grid-images {
     height: 250px;
   }
@@ -99,13 +99,10 @@
     grid-template-rows: 200px 1fr;
   }
   .recent-project-title {
-    font-size: 25px;
-
-    margin-left: 15px;
+    font-size: 35px;
   }
   .recent-project-view-project-button {
-    font-size: 14px;
-    display: none;
+    font-size: 16px;
   }
 }
 @media (max-width: 340px) {
@@ -117,7 +114,7 @@
   }
 }
 
-@media (min-width: 500px) and (max-width: 800px) {
+@media (min-width: 520px) and (max-width: 1000px) {
   .grid-images {
     height: 450px;
   }
@@ -172,9 +169,18 @@
   .recent-projects-body {
     grid-template-columns: 1fr 1fr;
   }
+  .recent-project-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-wrap: nowrap;
+  }
+
+  .recent-project-view-project-button {
+    font-size: 16px;
+  }
 }
 
-@media (min-width: 800px) and (max-width: 1200px) {
+@media (min-width: 1000px) and (max-width: 1200px) {
   .grid-images {
     height: 600px;
   }

@@ -212,7 +212,19 @@
   cursor: pointer;
   max-height: 351px;
 }
-
+/* .recent-projects-preview::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
+  max-height: 351px;
+} */
 .recent-projects-preview:hover {
   opacity: 0.8;
 }
@@ -221,29 +233,38 @@
   width: 100%;
   height: 100%;
   transition: transform 0.3s ease-in-out;
+  display: block;
+  z-index: 0;
   object-fit: cover;
   object-position: 50% 65%;
 }
 .recent-project-photo:hover {
   transform: scale(1.12); /* Zoom in by 10% */
 }
-.recent-project-title,
-.recent-project-view-project-button {
+
+.recent-project-title {
   position: absolute;
-  bottom: 5%;
+  bottom: 25%;
   left: 10%;
-  transform: translate(-15%, -25%);
-  font-size: 40px;
-  color: rgb(255, 2555, 255);
+  transform: translate(-10%, 50%);
+  font-size: 30px;
+  color: white; /* Correct color code */
   font-family: Teko, sans-serif;
   font-weight: 500;
-  font-size: 38px;
+  z-index: 2;
 }
+
 .recent-project-view-project-button {
-  bottom: 0%;
+  position: absolute;
+  bottom: 10%;
+  left: 8%;
   font-size: 20px;
+  color: white;
+  font-family: Teko, sans-serif;
   cursor: pointer;
+  z-index: 2;
 }
+
 .recent-project-view-project-button:hover {
   color: rgb(255, 193, 42);
 }
