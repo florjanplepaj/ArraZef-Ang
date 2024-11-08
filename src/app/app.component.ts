@@ -54,6 +54,13 @@ export class AppComponent implements OnInit {
     }
   }
 
+  onActivate(event: any) {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
+  }
   preloadImages() {
     const imageSources = [
       'Image/Works/construction-work-6.png',

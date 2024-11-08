@@ -67,7 +67,12 @@
     </div>
   </div>
 </header>
-<main><router-outlet basename="/ArraZef-Ang"></router-outlet></main>
+<main>
+  <router-outlet
+    basename="/ArraZef-Ang"
+    (activate)="onActivate($event)"
+  ></router-outlet>
+</main>
 <footer>
   <div class="footer-div-grid">
     <div class="footer-top-container">

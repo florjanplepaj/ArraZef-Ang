@@ -25,10 +25,27 @@ export const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes, {
       useHash: true,
-      scrollPositionRestoration: 'enabled',
+      scrollPositionRestoration: 'enabled', // Restores the scroll to top
     }),
     HttpClientModule,
   ],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule {
+  constructor(router: Router, viewportScroller: ViewportScroller) {
+    router.events
+      .pipe(filter((event): event is Scroll => event instanceof Scroll))
+      .subscribe((event: Scroll) => {
+        if (event.position) {
+          // When back/forward button is clicked, restore the scroll position
+          viewportScroller.scrollToPosition(event.position);
+        } else if (event.anchor) {
+          // Scroll to anchor (for anchor navigation)
+          viewportScroller.scrollToAnchor(event.anchor);
+        } else {
+          // Scroll to the top for new navigation
+          viewportScroller.scrollToPosition([0, 0]);
+        }
+      });
+  }
+}
