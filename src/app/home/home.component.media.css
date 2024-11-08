@@ -98,6 +98,15 @@
     display: grid;
     grid-template-rows: 200px 1fr;
   }
+  .recent-project-title {
+    font-size: 25px;
+
+    margin-left: 15px;
+  }
+  .recent-project-view-project-button {
+    font-size: 14px;
+    display: none;
+  }
 }
 @media (max-width: 340px) {
   .services-kind-up-text-text {
