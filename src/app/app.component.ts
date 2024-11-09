@@ -63,16 +63,16 @@ export class AppComponent implements OnInit {
   }
   preloadImages() {
     const imageSources = [
-      'Image/Works/construction-work-6.png',
-      'Image/Works/construction-work-5.jpg',
-      'Image/Logos/service-photo-6.jpg',
-      'Image/Projects/pic-28.jpg',
-      'Image/Works/construction-work-5.jpg',
-      'Image/Logos/services-logo-6.png',
-      'Image/Logos/services-logo-1.png',
-      'Image/Logos/services-logo-2.png',
-      'Image/Logos/services-logo-4.png',
-      'Image/Logos/service-logo-15.png',
+      '/Image/Works/construction-work-6.png',
+      '/Image/Works/construction-work-5.jpg',
+      '/Image/Logos/service-photo-6.jpg',
+      '/Image/Projects/pic-28.jpg',
+      '/Image/Works/construction-work-5.jpg',
+      '/Image/Logos/services-logo-6.png',
+      '/Image/Logos/services-logo-1.png',
+      '/Image/Logos/services-logo-2.png',
+      '/Image/Logos/services-logo-4.png',
+      '/Image/Logos/service-logo-15.png',
     ];
 
     imageSources.forEach((src) => this.preloadImage(src));
