@@ -57,7 +57,7 @@ export class DataCovers {
     },
     {
       id: '62a39ac0-6ac1-4097-9d4f-5342ff6dcf55',
-      name: 'Alba Villa',
+      name: 'Costruzione Villa Residenziale',
       location: 'Alba Turin, Italy',
       pics: [
         'Image/Covers/cover-pic-1.jpg',
@@ -76,22 +76,11 @@ export class DataCovers {
       ],
       type: 'residenza',
     },
-    {
-      id: '599ceceb-d0eb-4e11-90bd-07299c63280e',
-      name: 'Farigliano Villa',
-      location: 'Turin, Italy',
-      pics: [
-        'Image/Projects/pictures-of-pic-7/costuzione-pic-4.jpg',
-        'Image/Projects/pictures-of-pic-7/costuzione-pic-5.jpg',
-        'Image/Projects/pictures-of-pic-7/costuzione-pic-6.jpg',
-        'Image/Projects/pictures-of-pic-7/costuzione-pic-7.jpg',
-      ],
-      type: 'restruction',
-    },
+
     {
       id: 'ac222d2a-8075-4b7d-8325-0cdb082db49a',
-      name: 'Piscina a Sfioro',
-      location: 'Turin, Italy',
+      name: '',
+      location: 'Farigliano, Italy',
       pics: [
         'Image/Projects/pictures-of-pic-8/costuzione-pic-8.jpg',
         'Image/Projects/pictures-of-pic-8/costuzione-pic-10.jpg',
@@ -116,16 +105,6 @@ export class DataCovers {
         'Image/Projects/pictures-of-pic-9/costuzione-pic-56.jpg',
         'Image/Projects/pictures-of-pic-9/costuzione-pic-57.jpg',
         'Image/Projects/pictures-of-pic-9/costuzione-pic-58.jpg',
-      ],
-      type: 'restruction',
-    },
-    {
-      id: '6b2dd94f-5bfa-48f4-80d4-c568f1b8a9f0',
-      name: 'Farigliano Villa',
-      location: 'Turin, Italy',
-      pics: [
-        'Image/Projects/pictures-of-pic-10/costuzione-pic-16.jpg',
-        'Image/Projects/pictures-of-pic-10/costuzione-pic-17.jpg',
       ],
       type: 'restruction',
     },
